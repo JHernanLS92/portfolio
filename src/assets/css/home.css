@@ -1,7 +1,6 @@
 .Home{
     height: 100vh;
     text-align: center;
-    padding-top: 1rem;
     justify-content: space-around;
     display: flex;
     flex-direction: column;
