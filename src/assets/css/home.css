@@ -1,0 +1,94 @@
+.Home{
+    height: 100vh;
+    text-align: center;
+}
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(23, 70, 70);
+    justify-content: space-around;
+}
+
+.info{
+    margin: 5rem 0 2rem 0;
+    height: 50%;
+    font-size: 50px;
+    text-align: left;
+}
+.socialSection{
+    position: absolute;
+    bottom: 0;
+    left: 2rem;
+    display: flex ;
+    flex-direction: row;
+    z-index: 1;
+    font-size: 25px;
+}
+.imgHome{
+    width: 100%;
+    position: relative;
+    margin: 2rem 0 3rem 0 ;
+    height: 50%;
+}
+.linked{
+    background-color:#4294D4 ;
+    color: whitesmoke;
+    width: 40px;
+    height: 40px;
+    border-style: none;
+    border-radius: 5px 0  0  0;
+}
+.git{
+    background-color: black ;
+    color: whitesmoke;
+    width: 40px;
+    height: 40px;
+    border-style: none;
+    border-radius: 0 0 0 0;
+}
+.CV{
+   background-color:#004552 ;
+   width: 40px;
+   height: 40px;
+   border-style: none;
+   border-radius: 0 5px 0  0;
+}
+button>a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+
+.menu {
+    width: 40px;
+    height: 40px;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    right:2rem;
+    bottom: 1rem;
+}
+
+
+
+
+
+
+@media only screen and (min-width: 700px) {
+
+  }
+  @media only screen and (min-width: 992px) {
+    .contact{
+    }
+    .socialBtn{
+        width: 60px;
+        height: 60px;
+        font-size: 25px;
+    }
+
+}
