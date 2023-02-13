@@ -1,36 +1,16 @@
 .Home{
     height: 100vh;
     text-align: center;
-}
-.home{
+    padding-top: 1rem;
+    justify-content: space-around;
     display: flex;
     flex-direction: column;
     align-items: center;
     color: rgb(23, 70, 70);
-    justify-content: space-around;
 }
-.Menu{
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    background-color: #006985;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    top: 0;
-    min-height: calc( 100vh - 80px );
-    padding: 0rem 0rem;
-    top: -100%;
-    transition: left .5s linear;
-}
-#btn-menu:checked ~ .Menu{
-    top: 0;
-}
-
 li{
     list-style: none;
     width: 100%;
-    height: 25%;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -42,13 +22,10 @@ li>a{
     font-weight: 700;
     color: whitesmoke;
 }
-.hide{
-    right: 100%;
-}
 .info{
     margin: 0 0 1rem 0;
     height: 50%;
-    font-size: 50px;
+    font-size: 40px;
     text-align: left;
 }
 .socialSection{
@@ -62,8 +39,6 @@ li>a{
 .imgHome{
     width: 100%;
     position: relative;
-    margin: 2rem 0 3rem 0 ;
-    height: 50%;
 }
 .linked{
     background-color:#4294D4 ;
@@ -94,19 +69,42 @@ button>a{
 }
 
 
-.menu {
+.imgBtn{
     width: 40px;
     height: 40px;
-    background-color: aquamarine;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     border-radius: 50%;
     position: absolute;
-    right:2rem;
-    bottom: 1rem;
+    right: 2rem;
+    bottom: 2rem;
+    background-color: #006985;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
 }
+#btn-menu{
+    visibility: hidden;
+    margin: -10px 10px 0 0;
+}
+.menu{
+    position: absolute;
+    display: flex;
+    width: 90%;
+    height: 90vh;
+    top: 0;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: whitesmoke;
+    left: -100%;
+    transition: left .5s linear ;
+    background-color: rgb(23, 70, 70);;
+}
+#btn-menu:checked ~ .menu{
+    left: 0;
+}
+
 
 
 

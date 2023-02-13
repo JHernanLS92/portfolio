@@ -13,14 +13,12 @@ const Home = () => {
  
   return (
     <div className="Home container" id="home">
-      <section className="home">
         <div className="info">
           <h1>Hello</h1>
           <h1>I am</h1>
           <h1>Hernán</h1>
         </div>
         <img src={images.program} className="imgHome" />
-      </section>
       <div className="btn-group-horizontal socialSection">
         <button type="button" className="linked" onClick={linkedin}>
           <i className="fa-brands fa-linkedin-in"></i>
@@ -35,32 +33,30 @@ const Home = () => {
           </a>
         </button>
       </div>
-
-      <input type="checkbox" id="btn-menu"/>
-        <label htmlFor="btn-menu">
-        <i className="fa-solid fa-bars"></i>
-        </label>
-      <div className="Menu">
-      
-      <input type="checkbox" id="btn-menu"/>
-        <label htmlFor="btn-menu">
-        <i className="fa-solid fa-bars"></i>
-        </label>
-        <ul>
-          <li >
-            <Link to={"/aboutme"}>About Me</Link>
-          </li>
-          <li>
-          <Link to={"/portfolio"}>Portfolio</Link>
-          </li>
-          <li>
-          <Link to={"/contact"}>Contactme</Link>
-          </li>
-          <li >
-          <Link to={"/aboutme"}>About Me</Link>
-          </li>
-        </ul>
-      </div>
+      <div className="menuBtn">
+         
+              <input type="checkbox" id="btn-menu"/>
+              <label htmlFor="btn-menu"  className="imgBtn">
+                  <i className="fa-solid fa-bars"></i>
+              </label>
+             
+          <div className="menu">
+            <ul>
+              <li >
+                <Link to={"/aboutme"}>About Me</Link>
+              </li>
+              <li>
+              <Link to={"/portfolio"}>Portfolio</Link>
+              </li>
+              <li>
+              <Link to={"/contact"}>Contactme</Link>
+              </li>
+              <li >
+              <Link to={"/aboutme"}>About Me</Link>
+              </li>
+            </ul>
+          </div>
+        </div>
     </div>
   );
 };
