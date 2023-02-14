@@ -1,0 +1,80 @@
+.socialSection{
+    position: absolute;
+    bottom: 0;
+    left: 2rem;
+    display: flex ;
+    flex-direction: row;
+    font-size: 25px;
+    z-index: 1;
+}
+
+.linked{
+    background-color:#4294D4 ;
+    color: whitesmoke;
+    width: 40px;
+    height: 40px;
+    border-style: none;
+    border-radius: 5px 0  0  0;
+}
+.git{
+    background-color: black ;
+    color: whitesmoke;
+    width: 40px;
+    height: 40px;
+    border-style: none;
+    border-radius: 0 0 0 0;
+}
+.CV{
+   background-color:#004552 ;
+   width: 40px;
+   height: 40px;
+   border-style: none;
+   border-radius: 0 5px 0  0;
+}
+
+@media only screen and (min-width: 600px) {
+    .socialSection{
+        left: 0;
+        top: 50%;
+        flex-direction: column;
+        font-size: 35px;
+    }
+    .linked{
+        width: 40px;
+        height: 40px;
+        border-style: none;
+        border-radius:  0 5px 0  0;
+    }
+    .git{
+        width: 40px;
+        height: 40px;
+        border-style: none;
+        border-radius: 0 0 0 0;
+    }
+    .CV{
+       width: 40px;
+       height: 40px;
+       border-radius: 0  0 5px 0;
+    }
+  }
+
+
+  @media only screen and (min-width: 992px) {
+    .socialSection{
+        font-size: 70px;
+    }
+    .linked{
+        width: 70px;
+        height: 70px;
+    }
+    .git{
+        width: 70px;
+        height: 70px;
+        border-style: none;
+    }
+    .CV{
+       width: 70px;
+       height: 70px;
+    }
+
+}
