@@ -5,8 +5,8 @@ import Card from 'react-bootstrap/Card';
 
 const Skills = () => {
     return (
-        <div className='Skills ' id='skills'>
-            <div className='container' id='aboutMe'>
+        <div className='Container' >
+            <div className='Skills '>
                 <h1>Habilidades</h1>
                 <Carousel slide={false} >
                     <Carousel.Item >

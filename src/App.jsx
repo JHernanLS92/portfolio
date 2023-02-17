@@ -21,7 +21,7 @@ function App() {
           <Route path='/aboutme' element={<AboutMe/>} />
           <Route path='/portfolio' element={<Portfolio/>} />
           <Route path='/contact' element={<Contact/>} />
-          <Route path='/skills' element={<Skills/>} />
+          {/* <Route path='/skills' element={<Skills/>} /> */}
         </Routes>
         <Socialbtn/>
      </HashRouter>

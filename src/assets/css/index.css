@@ -11,7 +11,7 @@
     box-sizing: border-box;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
-.container{
+.Container{
   width: 70%;
   height: 100vh;
   margin: 0 auto;

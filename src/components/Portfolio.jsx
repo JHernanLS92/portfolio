@@ -36,55 +36,66 @@ const Portfolio = () => {
           </div>
         </div>
 
-        {/* 
+        <div className="card">
+          <div className="imgCard">
+            <img src={images.pokedex} className="imgCard" />
+          </div>
+          <div className="cardInfo">
+            <h1>Pokedex</h1>
 
-            <Card style={{ width: "18rem" }}>
-              <Card.Img variant="top" src={images.pokedex} />
-              <Card.Body>
-                <Card.Title>Pokedex</Card.Title>
-                <Card.Text>
-                Apicacion de Pokedex con inicio requerido y paginacion al consumir la API
-              Desarrollado con JavaScript / CSS / React / Json / useEfect / useStates
-                </Card.Text>
-                <Button variant="secundary">Go netlify</Button>
-              </Card.Body>
-            </Card>
+            <p> Apicacion de Pokedex con inicio requerido y paginacion al consumir la API desarrollado con: </p>
+            <div>JavaScript / CSS / React / Json / useEfect / useStates</div>
+            <a className="btnCard" href="https://pokedexjh.netlify.app">
+              Go netlify
+            </a>
+          </div>
+        </div>
 
-            <Card style={{ width: "18rem" }}>
-              <Card.Img variant="top" src={images.RyM} />
-              <Card.Body>
-                <Card.Title>Rick and Morty API</Card.Title>
-                <Card.Text>
-                Apicacion de catalogo de mundos de la serie se implelemnta paginacion y busqueda por ID en el consumo de la API
-              Desarrollado con JavaScript / CSS / React / Json / useEfect / useStates
-                </Card.Text>
-                <Button variant="secundary">Go netlify</Button>
-              </Card.Body>
-            </Card>
+        <div className="card">
+          <div className="imgCard">
+            <img src={images.RyM} className="imgCard" />
+          </div>
+          <div className="cardInfo">
+            <h1>Rick and Morty API</h1>
 
-            <Card style={{ width: "18rem" }}>
-              <Card.Img variant="top" src={images.ecommerceReact} />
-              <Card.Body>
-                <Card.Title>Ecomerce React</Card.Title>
-                <Card.Text>
-                Apicacion de compras en linea se creo un JSON para el almacenamiento de los productos y su consumo, y se utiliza login para acceder a compras y carrito
-                Desarrollado con JavaScript / CSS / React / Json / useEfect / hashRoutes
-                </Card.Text>
-                <Button variant="secundary">Go netlify</Button>
-              </Card.Body>
-            </Card>
+            <p> Apicacion de catalogo de mundos de la serie se implelemnta paginacion y busqueda por ID en el consumo de la API desarrollado con: </p>
+            <div>JavaScript / CSS / React / Json / useEfect / useStates</div>
+            <a className="btnCard" href="https://rickandmortyjhernan.netlify.app">
+              Go netlify
+            </a>
+          </div>
+        </div>
 
-            <Card style={{ width: "18rem" }}>
-              <Card.Img variant="top" src={images.weather} />
-              <Card.Body>
-                <Card.Title>Wether API</Card.Title>
-                <Card.Text>
-                Apicacion del clima implementa el consumo de API
-                Desarrollado con JavaScript / CSS / React
-                </Card.Text>
-                <Button variant="secundary">Go netlify</Button>
-              </Card.Body>
-            </Card> */}
+        <div className="card">
+          <div className="imgCard">
+            <img src={images.ecommerceReact} className="imgCard" />
+          </div>
+          <div className="cardInfo">
+            <h1>Ecomerce React</h1>
+
+            <p>Apicacion de compras en linea se creo un JSON para el almacenamiento de los productos y su consumo, y se utiliza login para acceder a compras y carrito desarrollado con: </p>
+            <div>JavaScript / CSS / React / Json / useEfect / hashRoutes</div>
+            <a className="btnCard" href="https://ecommerce-reactjh.netlify.app">
+              Go netlify
+            </a>
+          </div>
+        </div>
+
+        <div className="card">
+          <div className="imgCard">
+            <img src={images.weather} className="imgCard" />
+          </div>
+          <div className="cardInfo">
+            <h1>Wether API</h1>
+
+            <p>Apicacion del clima implementa el consumo de API desarrollado con: </p>
+            <div>JavaScript / CSS / React</div>
+            <a className="btnCard" href="https://weatherjhernan.netlify.app">
+              Go netlify
+            </a>
+          </div>
+        </div>
+      
       </div>
     </div>
   );

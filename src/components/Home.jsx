@@ -3,17 +3,19 @@ import images from "../assets/images";
 import "../assets/css/home.css";
 
 const Home = () => {
- 
   return (
-    <div className="Home container">
+    <div className="Container">
+      <div className="Home">   
         <div className="info">
-            <h1>HELLO.</h1>
-            <h1>I AM</h1>
-            <h1>HERNÁN</h1>
-            <p>FRONTEND DEVELPER</p>
+          <h1>HELLO.</h1>
+          <h1>I AM</h1>
+          <h1>HERNÁN</h1>
+          <p>FRONTEND DEVELPER</p>
         </div>
-       
-        <img src={images.program} className="imgHome" />
+        <div className="imgHome">
+          <img src={images.program} className="imghome" />
+        </div>
+      </div>
     </div>
   );
 };
