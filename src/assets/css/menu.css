@@ -1,76 +1,62 @@
-
-li{
-    list-style: none;
-    width: 100px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-}
-li>a{
-    text-decoration: none;
-    font-size: larger;
-    font-weight: 700;
-    color: whitesmoke;
-}
-.info{
-    margin: 0 0 1rem 0;
-    height: 50%;
-    font-size: 30px;
-    text-align: left;
-}
-
-.imgHome{
-    width: 90%;
-}
-button>a{
-    text-decoration: none;
-    color: whitesmoke;
-}
-
-
-.imgBtn{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    position: absolute;
-    right: 2rem;
-    bottom: 2rem;
-    background-color: #006985;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    z-index: 3;
+.Menubtn{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem;
 }
-#btn-menu{
-    visibility: hidden;
-    margin: -10px 10px 0 0;
+.logo{
+    max-width: 3rem;
+    height: 3.5rem;
+    z-index: 1;
+    position: fixed;
+    top: 1rem;
+}
+.bars_menu{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 1;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+}
+.bars_menu span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(108, 138, 119);
+    margin-top: 6px;
+    transform-origin: 0px 100% ;
+    transition: all 300ms ;
+}
+.line1.open{
+    transform: rotate(45deg) translate(-2px,1px);
+}
+.line2.open{
+    opacity: 0;
+    margin-left: -30;
+}
+.line3.open{
+    transform: rotate(-45deg) translate(-4px,2px);
 }
 .menu{
+    max-width: 350px;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: #006A7A;
     position: absolute;
     display: flex;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    flex-direction: column;
     justify-content: center;
-    left: -100%;
-    transition: left .5s linear ;
-    background-color: rgb(23, 70, 70);
-    padding: 5rem;
-    z-index: 2;
+    transition: all 0.3s linear;
+   transform: translateX(-100%);
 }
-#btn-menu:checked ~ .menu{
-    left: 0;
+.menu.open{
+    transform: translateX(0);
 }
 
 @media only screen and (min-width: 600px) {
-    .menu{
-        display: none;
-    }
-    .imgBtn{
-        display: none;
-    }
+
 }

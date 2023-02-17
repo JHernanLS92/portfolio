@@ -2,28 +2,25 @@
     width: 100%;
     height: 100vh;
     text-align: center;
-    justify-content: center;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
     color: rgb(23, 70, 70);
 }
-.infoMobile{
+.info{
     width: 100%;
-    height: 50%;
-    font-size: 1.5rem;
+    height: 40vh;
+    font-size: 1rem;
     justify-content: center;
-    gap: 1rem;
     display: flex;
     flex-direction: column;
+    align-items: center;
     font-weight: 700;
     text-shadow: .1rem .1rem .3rem #333;
 }
-.info{
-   display: none;
-}
 .imgHome{
-    height: 50%;
+    height: 40vh;
     width: 100%;
 }
 
@@ -31,197 +28,11 @@
 
 
 @media only screen and (min-width: 600px) {
-    .Home{
-        justify-content: center;
-        flex-direction: row-reverse;
-    }
-    .infoMobile{
-        display: none;
-    }
-    .info{
-        display: flex;
-        flex-direction: column;
-        width: 60%;
-        justify-content: center;
-        align-items: center;
-    }
-    .imgHome{
-        max-width: 40%;
-    }
-
-    .menu1, .menu2, .menu3, .menu4{
-        padding: 2rem 7rem;
-        width: 100%;
-        height: 20%;
-        cursor: pointer;
-        border:  none;
-        position: relative;
-        overflow: hidden;
-    }
-  
-    .menu1::before{
-        content: 'Hello.';
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        transform: translate(-50%, -50%);
-        color: rgb(23, 70, 70);
-        text-transform: uppercase;
-        font-size: 3rem;
-        letter-spacing: .3rem;
-        font-weight: 700;
-        text-shadow: .1rem .1rem .2rem #333;
-        transition: .2s ease;
-    }
-    .menu2::before{
-        content: 'I am';
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        transform: translate(-50%, -50%);
-        color: rgb(23, 70, 70);
-        text-transform: uppercase;
-        font-size: 3rem;
-        letter-spacing: .3rem;
-        font-weight: 700;
-        text-shadow: .1rem .1rem .2rem #333;
-        transition: .2s ease;
-    }
-    .menu3::before{
-        content: 'Hernán';
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        transform: translate(-50%, -50%);
-        color: rgb(23, 70, 70);
-        text-transform: uppercase;
-        font-size: 3rem;
-        letter-spacing: .3rem;
-        font-weight: 700;
-        text-shadow: .1rem .1rem .2rem #333;
-        transition: .2s ease;
-    }
-    .menu4::before{
-        content: 'Frontend developer';
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        transform: translate(-50%, -50%);
-        color: rgb(23, 70, 70);
-        text-transform: uppercase;
-        font-size: 2rem;
-        letter-spacing: .3rem;
-        font-weight: 700;
-        text-shadow: .1rem .1rem .2rem #333;
-        transition: .2s ease;
-    }
-
-
-
-
-    
-.menu1::after{
-    content: 'Home';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    transform: translate(-50%, -50%);
-    color: rgb(23, 70, 70);
-    text-transform: uppercase;
-    font-size: 3rem;
-    letter-spacing: .3rem;
-    font-weight: 700;
-    text-shadow: .1rem .1rem .2rem #333;
-    transition: .2s ease;
-    opacity: 0;
-}
-.menu1:hover::before{
-    transform: translate(-50%, -50%) scale(2);
-    opacity: 0;
-}
-.menu1:hover::after{
-    transform: translate(-50%, -50%) scale(1);
-    opacity: 1;
-}
-
-
-.menu2::after{
-    content: 'About Me';
-    position: absolute;
-        width: 100%;
-        height: 100%;
-        transform: translate(-50%, -50%);
-        color: rgb(23, 70, 70);
-        text-transform: uppercase;
-        font-size: 3rem;
-        letter-spacing: .3rem;
-        font-weight: 700;
-        text-shadow: .1rem .1rem .2rem #333;
-        transition: .2s ease;
-    opacity: 0;
-}
-.menu2:hover::before{
-    transform: translate(-50%, -50%) scale(2);
-    opacity: 0;
-}
-.menu2:hover::after{
-    transform: translate(-50%, -50%) scale(1);
-    opacity: 1;
-}
-
-.menu3::after{
-    content: 'Portfolio';
-    position: absolute;
-        width: 100%;
-        height: 100%;
-        transform: translate(-50%, -50%);
-        color: rgb(23, 70, 70);
-        text-transform: uppercase;
-        font-size: 3rem;
-        letter-spacing: .3rem;
-        font-weight: 700;
-        text-shadow: .1rem .1rem .2rem #333;
-        transition: .2s ease;
-    opacity: 0;
-}
-.menu3:hover::before{
-    transform: translate(-50%, -50%) scale(2);
-    opacity: 0;
-}
-.menu3:hover::after{
-    transform: translate(-50%, -50%) scale(1);
-    opacity: 1;
-}
-.menu4::after{
-    content: 'contact me';
-    position: absolute;
-        width: 100%;
-        height: 100%;
-        transform: translate(-50%, -50%);
-        color: rgb(23, 70, 70);
-        text-transform: uppercase;
-        font-size: 3rem;
-        letter-spacing: .3rem;
-        font-weight: 700;
-        text-shadow: .1rem .1rem .2rem #333;
-        transition: .2s ease;
-    opacity: 0;
-}
-.menu4:hover::before{
-    transform: translate(-50%, -50%) scale(2);
-    opacity: 0;
-}
-.menu4:hover::after{
-    transform: translate(-50%, -50%) scale(1);
-    opacity: 1;
+   
 }
     
-  }
-
 
   @media only screen and (min-width: 992px) {
    
-    .imgHome{
-        max-width: 800px;
-    }
+  
 }

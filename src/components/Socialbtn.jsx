@@ -18,8 +18,7 @@ const Socialbtn = () => {
         </button>
         <button type="button" className="CV">
           <a href="./CV-JuanHernanLopezSuaste.pdf" download className="cv">
-            {" "}
-            CV{" "}
+            CV
           </a>
         </button>
       </div>

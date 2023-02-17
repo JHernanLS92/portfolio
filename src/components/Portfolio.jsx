@@ -1,99 +1,91 @@
-import React from 'react';
-import images from '../assets/images';
-import Carousel from 'react-bootstrap/Carousel';
+import React from "react";
+import images from "../assets/images";
 
 const Portfolio = () => {
   return (
-    <div className='Portfolio container' id='portfolio'>
+    <div className="Portfolio container">
+      <h1>Portfolio</h1>
+      <div className="bodyCards">
+        <div className="card">
+          <div className="imgCard">
+            <img src={images.ecommerce} className="imgCard" />
+          </div>
+          <div className="cardInfo">
+            <h1>Ecomerce</h1>
 
-      <h1>Portafolio</h1>
-      <Carousel slide={false}>
-        <Carousel.Item>
-          <img
-            className="d-block w-100 hoverCarousel"
-            src={images.ecommerce}
-            alt="First slide" />
-          <a href="https://ecomercejhernan.netlify.app">
-            <div className='backCarousel'>
-              <b>Ecomerce</b>
-              <p>Apicacion de compras en linea</p>
-              <p>Desarrollado con vanilla JavaScript y CSS</p>
-            </div>
-          </a>
+            <p>Apicacion de compras en linea desarrollado con: </p>
+            <div>vanilla JavaScript y CSS</div>
+            <a className="btnCard" href="https://ecomercejhernan.netlify.app">
+              Go netlify
+            </a>
+          </div>
+        </div>
 
-        </Carousel.Item>
-        <Carousel.Item >
-          <img
-            className="d-block w-100 hoverCarousel"
-            src={images.cards}
-            alt="Second slide"
-          />
-          <a href='https://famousquotesjhernan.netlify.app'>
-            <div className='backCarousel'>
-              <b>Cards</b>
-              <p>Apicacion de tarjetas con fraces de faomosos</p>
-              <p>Desarrollado con vanilla JavaScript y CSS</p>
-            </div>
-          </a>
-        </Carousel.Item>
-        <Carousel.Item >
-          <img
-            className="d-block w-100 hoverCarousel"
-            src={images.pokedex}
-            alt="Third slide"
-          />
-          <a href='https://pokedexjh.netlify.app'>
-            <div className='backCarousel'>
-              <b>Pokedex</b>
-              <p>Apicacion de Pokedex con inicio requerido y paginacion al consumir la API </p>
-              <p>Desarrollado con JavaScript / CSS / React / Json / useEfect / useStates</p>
-            </div>
-          </a>
-        </Carousel.Item>
-        <Carousel.Item >
-          <img
-            className="d-block w-100 hoverCarousel"
-            src={images.RyM}
-            alt="Third slide"
-          />
-          <a href='https://rickandmortyjhernan.netlify.app'>
-            <div className='backCarousel' href=''>
-              <b>Rick and Morty API</b>
-              <p>Apicacion de catalogo de mundos de la serie se implelemnta paginacion y busqueda por ID en el consumo de la API</p>
-              <p>Desarrollado con JavaScript / CSS / React / Json / useEfect / useStates</p>
-            </div>
-          </a>
-        </Carousel.Item>
-        <Carousel.Item >
-          <img
-            className="d-block w-100 hoverCarousel"
-            src={images.ecommerceReact}
-            alt="Third slide"
-          />
-          <a href='https://ecommerce-reactjh.netlify.app'>
-            <div className='backCarousel' href=''>
-              <b>Ecomerce React</b>
-              <p>Apicacion de compras en linea se creo un JSON para el almacenamiento de los productos y su consumo, y se utiliza login para acceder a compras y carrito</p>
-              <p>Desarrollado con JavaScript / CSS / React / Json / useEfect / hashRoutes</p>
-            </div>
-          </a>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100 hoverCarousel"
-            src={images.weather}
-            alt="Third slide"
-          />
-          <a href='https://weatherjhernan.netlify.app'>
-            <div className='backCarousel' href=''>
-              <b>Wether API</b>
-              <p>Apicacion del clima implementa el consumo de API</p>
-              <p>Desarrollado con JavaScript / CSS / React</p>
-            </div>
-          </a>
-        </Carousel.Item>
-      </Carousel>
+        <div className="card">
+          <div className="imgCard">
+            <img src={images.cards} className="imgCard" />
+          </div>
+          <div className="cardInfo">
+            <h1>Cards</h1>
 
+            <p> Apicacion de tarjetas con fraces de faomosos desarrollado con: </p>
+            <div>vanilla JavaScript y CSS</div>
+            <a className="btnCard" href="https://famousquotesjhernan.netlify.app">
+              Go netlify
+            </a>
+          </div>
+        </div>
+
+        {/* 
+
+            <Card style={{ width: "18rem" }}>
+              <Card.Img variant="top" src={images.pokedex} />
+              <Card.Body>
+                <Card.Title>Pokedex</Card.Title>
+                <Card.Text>
+                Apicacion de Pokedex con inicio requerido y paginacion al consumir la API
+              Desarrollado con JavaScript / CSS / React / Json / useEfect / useStates
+                </Card.Text>
+                <Button variant="secundary">Go netlify</Button>
+              </Card.Body>
+            </Card>
+
+            <Card style={{ width: "18rem" }}>
+              <Card.Img variant="top" src={images.RyM} />
+              <Card.Body>
+                <Card.Title>Rick and Morty API</Card.Title>
+                <Card.Text>
+                Apicacion de catalogo de mundos de la serie se implelemnta paginacion y busqueda por ID en el consumo de la API
+              Desarrollado con JavaScript / CSS / React / Json / useEfect / useStates
+                </Card.Text>
+                <Button variant="secundary">Go netlify</Button>
+              </Card.Body>
+            </Card>
+
+            <Card style={{ width: "18rem" }}>
+              <Card.Img variant="top" src={images.ecommerceReact} />
+              <Card.Body>
+                <Card.Title>Ecomerce React</Card.Title>
+                <Card.Text>
+                Apicacion de compras en linea se creo un JSON para el almacenamiento de los productos y su consumo, y se utiliza login para acceder a compras y carrito
+                Desarrollado con JavaScript / CSS / React / Json / useEfect / hashRoutes
+                </Card.Text>
+                <Button variant="secundary">Go netlify</Button>
+              </Card.Body>
+            </Card>
+
+            <Card style={{ width: "18rem" }}>
+              <Card.Img variant="top" src={images.weather} />
+              <Card.Body>
+                <Card.Title>Wether API</Card.Title>
+                <Card.Text>
+                Apicacion del clima implementa el consumo de API
+                Desarrollado con JavaScript / CSS / React
+                </Card.Text>
+                <Button variant="secundary">Go netlify</Button>
+              </Card.Body>
+            </Card> */}
+      </div>
     </div>
   );
 };

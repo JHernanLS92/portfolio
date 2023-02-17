@@ -11,6 +11,7 @@ import logobya from './img/LOGOByA.png'
 import logobnya from './img/LOGONyA.png'
 import logohorizontal from './img/logohorizontalB.png'
 import program from './img/programing.jpg'
+import me from './img/me.jpg'
 
 export default{
     "imgHome": homeImg,
@@ -25,5 +26,6 @@ export default{
     "logobya": logobya,
     "logobnya": logobnya,
     "logohorizontal": logohorizontal,
-    "program" : program
+    "program" : program,
+    "me": me
 }

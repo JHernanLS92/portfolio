@@ -1,11 +1,11 @@
 .socialSection{
-    position: absolute;
+    position: fixed;
+    width: 100%;
     bottom: 0;
-    left: 2rem;
     display: flex ;
     flex-direction: row;
+    justify-content: space-around;
     font-size: 25px;
-    z-index: 1;
 }
 
 .linked{
@@ -14,7 +14,7 @@
     width: 40px;
     height: 40px;
     border-style: none;
-    border-radius: 5px 0  0  0;
+    border-radius:50%;
 }
 .git{
     background-color: black ;
@@ -22,14 +22,14 @@
     width: 40px;
     height: 40px;
     border-style: none;
-    border-radius: 0 0 0 0;
+    border-radius: 50%;
 }
 .CV{
    background-color:#004552 ;
    width: 40px;
    height: 40px;
    border-style: none;
-   border-radius: 0 5px 0  0;
+   border-radius: 50%;
 }
 
 @media only screen and (min-width: 600px) {
@@ -59,22 +59,4 @@
   }
 
 
-  @media only screen and (min-width: 992px) {
-    .socialSection{
-        font-size: 70px;
-    }
-    .linked{
-        width: 70px;
-        height: 70px;
-    }
-    .git{
-        width: 70px;
-        height: 70px;
-        border-style: none;
-    }
-    .CV{
-       width: 70px;
-       height: 70px;
-    }
-
-}
+ 
