@@ -1,41 +1,6 @@
-@import url('./aboutMe.css');
-@import url('./App.css');
-@import url('./home.css');
-@import url('./menu.css');
-@import url('./portfolio.css');
-@import url('./socialBtn.css');
-
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
-.Container{
-  width: 70%;
-  height: 100vh;
-  margin: 0 auto;
-  display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-}
-ul{
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-}
-li{
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 30px;
-  color: whitesmoke;
-}
-a{
-  color: whitesmoke;
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 15px;
-}

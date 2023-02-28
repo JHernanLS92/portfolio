@@ -1,59 +1,109 @@
-.Home{
+.Home {
     width: 100%;
     height: 100vh;
-    text-align: center;
+    background-image: url("../img/Homevect.svg");
+    background-repeat: no-repeat;
+    background-size: cover ;
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
-    color: rgb(23, 70, 70);
+    justify-content: center;
 }
-.info{
-    width: 100%;
-    height: 50%;
-    font-size: 1rem;
-    justify-content: center;
+.Container{
+    background-color: #ffffffb0;
+    width: 80%;
+    height: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
-    font-weight: 700;
-    text-shadow: .1rem .1rem .3rem #333;
+    justify-content: space-around;
 }
 .imgHome{
-    width: 100%;
-    height: 50%;
+    width: 98%;
 }
-.imgHome>img{
+.info{
     width: 80%;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
 }
 
-
+.socialBtns{
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+a{
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cv{
+    position: relative;
+    left: 1.5rem;
+}
+.socialBtns>a>img{
+    width: 30px;
+    height: 40px;
+}
 
 
 @media only screen and (min-width: 600px) {
-   .Home{
-    flex-direction: row-reverse;
-   }
-   .info{
-    width: 50%;
-    font-size: 2rem;
-   }
-   .imgHome{
-    width: 40%;
-   }
+    .imgHome{
+        width: 90%;
+        margin: 1rem;
+    }
+    .info{
+        font-size: 30px;
+    }
+    .socialBtns{
+        height: 3rem;
+    }
+    .cv{
+        left: 1.8rem;
+    }
+    .socialBtns>a>img{
+        width: 40px;
+        height: 50px;
+    }
 }
     
 
   @media only screen and (min-width: 992px) {
-    .Home{
-        width: 100%;
-       }
-       .info{
-        width: 60%;
-        height: 80%;
-       } 
-       .imgHome{
-
-       }
-  
+    .Container{
+        flex-direction: row;
+        justify-content: center;
+    }
+    .imgHome{
+        width: 80%;
+    }
+    .info{
+        gap: 1rem;
+        justify-content: center;
+        width: 50%;
+        align-items: left;
+        text-align: left;
+        font-size: 35px;
+    }   
+    .socialBtns{
+        height: 5rem;
+    }
+    a{
+        font-size: 25px;
+    }
+    .cv{
+        left: 2.8rem;
+    }
+    .socialBtns>a>img{
+        width: 60px;
+        height: 70px;
+    }
 }
