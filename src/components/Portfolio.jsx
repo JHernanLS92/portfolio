@@ -5,22 +5,24 @@ import "../assets/css/portfolio.css"
 const Portfolio = () => {
   return (
     <div className="Portfolio">
-      <h1>Portfolio</h1>
+     <h1>Portfolio</h1>
       <div className="ContainPortfolio">
-        
+      
         <div className="card">
+
           <div className="imgCard">
             <img src={images.ecommerce} className="imgCard" />
           </div>
+
           <div className="cardInfo">
             <h2>Ecomerce</h2>
-
             <p>Apicacion de compras en linea desarrollado con: </p>
             <div>vanilla JavaScript y CSS</div>
             <a className="btnCard" href="https://ecomercejhernan.netlify.app">
               Go netlify
             </a>
           </div>
+
         </div>
  
         <div className="card">
