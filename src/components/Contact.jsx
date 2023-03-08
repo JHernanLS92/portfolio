@@ -1,5 +1,6 @@
 import React from "react";
 import "../assets/css/contact.css";
+import images from "../assets/images";
 
 const Contact = () => {
   return (
@@ -7,8 +8,11 @@ const Contact = () => {
       <div className="ContainerContact">
         <h1>Contacto</h1>
         <div>
-          <h2>Correo</h2>
-          <h2>Numero</h2>
+          <img src={images.gmail} alt="" />
+          <h3>jhernan.lopez92@gmail.com</h3>
+          <img src={images.whatsapp} alt="" />
+          <h3>4191126988</h3>
+          <img src={images.linkedin} alt="" />
           <h2>Linkedin</h2>
         </div>
       </div>

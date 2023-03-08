@@ -19,7 +19,8 @@ import netlify from './img/netlify.png'
 import node from './img/nodejs.png'
 import react from './img/react.png'
 import portfolio from './img/portfolio.svg'
-
+import  gmail from './img/gmail.svg'
+import  whatsApp  from './img/whatsapp.svg'
 
 export default{
     "cards": cards,
@@ -41,5 +42,7 @@ export default{
     "netlify": netlify,
     "node": node,
     "react": react,
-    "portfolio": portfolio
+    "portfolio": portfolio,
+    "gmail": gmail,
+    "whatsapp": whatsApp
 }
