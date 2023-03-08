@@ -17,12 +17,27 @@
     align-items: center;
     justify-content: space-around;
 }
+.infoContact{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 img{
     width: 40px;
 }
+h4{
+    font-size: 15px;
+}
+p{
+ overflow: scroll;}
+.cont{
+    width: 100%; 
+}
 @media only screen and (min-width: 600px) {
    
-}
-@media only screen and (min-width: 992px) {
-    
+p{
+    overflow:auto;}
 }
